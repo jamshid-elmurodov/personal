@@ -31,6 +31,9 @@ enable = true
 allowed_domains = [
     { directive = "connect-src", domains = ["'self'", "cloudflareinsights.com"] },
     { directive = "script-src", domains = ["'self'", "static.cloudflareinsights.com"] },
+    { directive = "style-src", domains = ["'self'", "'unsafe-inline'"] },
+    { directive = "font-src", domains = ["'self'"] },
+    { directive = "img-src", domains = ["'self'", "data:"] }
 ]
 
 [extra.responsive_images]
